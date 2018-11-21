@@ -1,7 +1,43 @@
-# QASocail
-🔥小程序社交问答，明星互动，UI全部源码，欢迎下载学习
+# 欢迎使用借鉴了解本项目（Q&A社交）
 
-废话不多说，上图了，如果有大家能用的上的功能UI欢迎随意自取，给一个star就好，有什么问题可加QQ:1075437557
+------
+
+🔥小程序社交问答，明星互动，UI全部源码，**Q&A社交** 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的项目。 您可以使用Q&A社交：
+
+> * 整理知识，学习笔记
+> * 了解小程序自定义组件
+> * 直接可用的UI效果
+> * 类似项目可借鉴完成
+
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/1.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/2.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/3.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/4.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/5.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/6.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/7.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/8.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/9.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/10.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/11.png)
+------
+![cmd-markdown-logo](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/12.png)
+
+------
+
+🔥小程序社交问答，明星互动，UI全部源码，欢迎下载学习,祝您在这里记录、阅读、分享愉快！
+
+作者 [@liuchao][3]     
+2018 年 11月 07日    
 
 
-![首页](https://raw.githubusercontent.com/szhlliuchao/QASocail/master/demo-image/1.png)
