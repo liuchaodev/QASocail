@@ -1,0 +1,21 @@
+<!--pages/my_platform/platfrom.wxml-->
+<view class='root'>
+  <view class='top_divideline'></view>
+
+  <view class='platform_title'>么么哒平台规则V1.0.0</view>
+
+  <view class='platform_date_and_name'>
+    <text class='platform_date'>2018-08-27</text>
+    <text class='platform_name'>MuXiaoHai</text>
+  </view>
+
+  <view class='platform_image_pic_container'>
+    <image class='platform_image_pic' src='../../image/platform.jpg'></image>
+  </view>
+  <view class='platform_text'>    
+　　三十岁是一扇门，门里面是此时的平淡安逸，门外面是未知的挑战与激情。看到众多招聘广告的年龄要求——三十五周岁以下，有一种莫名的恐慌，然后暗自庆幸自己还有一份工作。三十岁是一道鸿沟，90后、00后的小孩们兴致勃勃地聊着跑男的情景恰似当年的我们对《流星花园》的执迷狂热，我们所说的责任、信念、三观等在他们看来不可思议。父辈们劝我们平安是福、知足常乐，而内心深处却住着一个倔强不屈、勇于挑战的自己。
+
+　　三十岁是个岔路口，一边是安逸舒适的人生之路，就像温水中的青蛙，沉浸在一成不变、波澜不惊的生活中不能自拔，最终失了跳出去的斗志和勇气；另一边道路泥泞、弯曲、充满坎坷、前途未卜，机遇与挑战激励着我们不断成长进步，一路上感受着探索未知世界的乐趣。
+
+　　三十岁是人生中的一个转折，棱角分明、意气用事、口无遮拦、锋芒毕露被圆融世故、深思熟虑、谨言慎行、韬光养晦所代替；曾经追求生活品质热衷于名牌的我们觉得购买打折、促销商品有失风度，现在竟为秒杀到一件根本用不上的物品而欣喜不已；为维护自己的权益与商家据理力争，有时候也和买菜的小贩们调侃几句，发发牢骚，这就是所谓的中年油腻人生吗？</view>
+</view>

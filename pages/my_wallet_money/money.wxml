@@ -1,0 +1,17 @@
+<!--pages/my_wallet_recharge/recharge.wxml-->
+<view>
+  <!--分割线-->
+  <view class='top_divideline'></view>
+
+  <view class='recharge_container'>
+    <view class='recharge_title'>充值金额</view>
+    <view class='recharge_amount_container'>
+      <text class='recharge_text'>¥</text>
+      <input class='recharge_amount' placeholder-class="place-holder" type='number' maxlength='7' placeholder='提现金额'></input>
+      <view class='all_money'>全部提现</view>
+    </view>
+    <view class='divideline'></view>
+    <view class='money'>可用提现金额 ¥1200</view>
+  </view>
+  <view class='recahrge_button'>确定充值</view>
+</view>

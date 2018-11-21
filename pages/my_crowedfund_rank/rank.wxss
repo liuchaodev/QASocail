@@ -1,0 +1,264 @@
+/* pages/my_attention/attention.wxss */
+/* pages/my_attention/attention.wxss */
+page{
+  padding-bottom: 100rpx;
+}
+.root {
+  width: 100%;
+ 
+}
+
+.top_divideline {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 1rpx;
+  background: #f2f2f2;
+}
+
+.my_info_container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+ 
+  background: white;
+}
+
+.my_info_pic_container {
+  position: relative;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.my_info_pic {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 10rpx;
+}
+
+.my_info_vip_pic {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: 0rpx;
+  bottom: 20rpx;
+}
+
+.my_info_name {
+ 
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  color: #999999;
+  text-align: center;
+
+}
+
+.attention_item_content {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.attention_item_button_text {
+
+  padding-left: 30rpx;
+ 
+  border-radius: 16rpx;
+  margin-right: 30rpx;
+  text-align: right;
+  font-size: 32rpx;
+  color: #333;
+  
+}
+
+.my_common_item_container_with_divideline {
+  display: flex;
+  flex-direction: column;
+}
+
+.my_common_item_divider_background {
+  background: white;
+}
+
+.my_common_item_divider {
+  background: #e8e8e8;
+  margin-left: 30rpx;
+  height: 3rpx;
+}
+
+.detail_left {
+  margin-left: 30rpx;
+  margin-top: 60rpx;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.detail_top_three {
+  color: #7a1eff;
+}
+
+.detail_other_rank {
+  color: #333;
+}
+
+.detail_right {
+  margin-left: 20rpx;
+  width: 100%;
+}
+
+.detail_item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+}
+
+.bottom_my_rank {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+   box-shadow: 1px 1px 1px 2px #ddd;
+}
+
+.bottom_my_container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 0rpx;
+  background: white;
+}
+
+.bottom_my_text {
+  margin-top: 45rpx;
+  margin-right: 30rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fd7a3e;
+}
+
+
+.bottom_my_vip_pic {
+  width: 25rpx;
+  height: 25rpx;
+  position: absolute;
+  right: 0rpx;
+  bottom: 40rpx;
+}
+.bottom_my_name {
+  margin-left: 20rpx;
+  height: 100rpx;
+  margin-top: 25rpx;
+  font-size: 34rpx;
+  color: #030303;
+  text-align: center;
+  font-weight: bold;
+ 
+}
+.top_image_container{
+  height: 240rpx;
+    margin-top: 20rpx;
+    padding-left: 20rpx;
+      padding-right: 20rpx;
+}
+.top_image{
+  width: 100%;
+  height: 100%;
+}
+.attention_item_right{
+  padding-top: 35rpx;
+  display: flex;
+  padding-right: 10rpx;
+  flex-direction: column;
+}
+.attention_item_text{
+  font-family: PingFangSC-Regular;
+font-size: 24rpx;
+margin-top: 10rpx;
+color: #999999;
+letter-spacing: -0.35px;
+text-align: center;
+line-height: 24rpx;
+
+}
+.rank_item_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  padding-bottom: 40rpx;
+  padding-top: 35rpx;
+}
+
+.bottom_my_rank {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+   box-shadow: 1px 1px 1px 2px #ddd;
+}
+
+.bottom_my_container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 0rpx;
+  background: white;
+}
+
+.bottom_my_text {
+  margin-top: 45rpx;
+  margin-right: 30rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fd7a3e;
+}
+
+
+.bottom_my_vip_pic {
+  width: 25rpx;
+  height: 25rpx;
+  position: absolute;
+  right: 0rpx;
+  bottom: 40rpx;
+}
+.bottom_my_name {
+  margin-left: 20rpx;
+  height: 100rpx;
+  margin-top: 25rpx;
+  font-size: 34rpx;
+  color: #030303;
+  text-align: center;
+  font-weight: bold;
+ 
+}
+.crowedfund_rank_amount{
+  font-size: 34rpx;
+color: #030303;
+margin-left: 20rpx;
+font-weight: bold;
+}
+.crowedfund_rank_text{
+  margin-left: 20rpx;
+}
+.charity_button {
+  text-align: center;
+  background: #f5d600;
+  font-size: 32rpx;
+  width: 100%;
+  color: #fff;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  position: fixed;
+  bottom: 0rpx;
+}
+
+

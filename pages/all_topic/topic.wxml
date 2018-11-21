@@ -1,0 +1,117 @@
+<view class='root'>
+  <view class='header'>
+    <view class='tab1_container' bindtap="swichNav" id="1">
+      <view class="{{currentTab==1? 'tab_text_selected':'tab_text_unselected'}}" style='color:{{seriousColor}}'>已回答</view>
+      <view class="{{currentTab==1?'tab_line_selected':'tab_line_unselected'}}"></view>
+    </view>
+
+    <view class='tab2_container' bindtap="swichNav" id="2">
+      <view class="{{currentTab==2?'tab_text_selected':'tab_text_unselected'}}" style='color:{{seriousColor}}'>未回答</view>
+      <view class="{{currentTab==2?'tab_line_selected':'tab_line_unselected'}}"></view>
+    </view>
+
+  </view>
+
+
+ 
+
+  <view class='ask_me_container'  hidden="{{currentTab==1?'':'hidden'}}">
+
+   <empty wx:if="{{empty1}}"/>
+    <view class='question_item'  wx:key ="{{index}}"  wx:for="{{answeredList}}" bindtap='questionDetail' data-topicId="{{item.topic_id}}">
+
+      <view class='question_person_and_star'>
+        <view class='question_person' catchtap='personInfo' data-userId='{{item.user_id}}'>
+          <image class='question_person_header'  src="{{item.img_url==''?'../../image/default_icon.png':item.img_url}}"></image>
+          <text class='question_person_nickname'>{{item.name}}</text>
+        </view>
+        <view class='question_star'>
+          <text class='question_star_num'>{{item.red_heart}}🌟</text>
+        </view>
+      </view>
+
+      <view class='question_remark'>
+         {{item.content.txt}}
+      </view>
+
+      <view class='comment_and_thumb_container'>
+
+        <view class='thumb_container'>
+          <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+          <text class='comment_and_thumb_text'>{{item.comment_num}}</text>
+        </view>
+
+        <view class='comment_container'>
+          <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+          <text class='comment_and_thumb_text'>{{item.like_num}}</text>
+        </view>
+      </view>
+
+      <view class='answer_voice'>
+        <view class='answer_voice_container'>
+          <image class='answer_voice_pic' src='../../image/voice.jpg'></image>
+        </view>
+        <text class='answer_voice_time'>1s</text>
+      </view>
+
+      <view class='question_item_innder_divideline'>
+      </view>
+
+      <view class='tell_somebody'>
+         @{{item.r_name}}
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class='ask_me_container' hidden="{{currentTab==2?'':'hidden'}}" >
+  <empty wx:if="{{empty2}}"/>
+    <view class='question_item' wx:key ="{{index}}" wx:for="{{unAnsweredList}}" bindtap='questionDetail' data-topicId="{{item.topic_id}}">
+
+      <view class='question_person_and_star'>
+        <view class='question_person' catchtap='personInfo' data-userId='{{item.user_id}}'>
+          <image class='question_person_header' src="{{item.img_url==''?'../../image/default_icon.png':item.img_url}}"></image>
+          <text class='question_person_nickname'>{{item.name}}</text>
+        </view>
+        <view class='question_star'>
+          <text class='question_star_num'>{{item.red_heart}}🌟</text>
+        </view>
+      </view>
+
+      <view class='question_remark'>
+        {{item.content.txt}}
+      </view>
+
+
+      <view class='comment_and_thumb_container'>
+
+        <view class='thumb_container'>
+          <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+          <text class='comment_and_thumb_text'>{{item.comment_num}}</text>
+        </view>
+
+        <view class='comment_container'>
+          <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+          <text class='comment_and_thumb_text'>{{item.like_num}}</text>
+        </view>
+      </view>
+
+      <view class='time_left'>
+        {{item.remaining_time==0?"已结束":"剩余：2小时30分"}}
+      </view>
+
+      <view class='question_item_innder_divideline'>
+      </view>
+
+      <view class='tell_somebody'>
+        @{{item.r_name}}
+      </view>
+    </view>
+
+  </view>
+
+   <view class='noMoreData' hidden="{{currentTab==1?'':'hidden'}}" wx-if="{{noMoreData1}}" >没有数据更多数据了</view>
+    <view class='noMoreData' hidden="{{currentTab==2?'':'hidden'}}"  wx-if="{{noMoreData2}}">没有数据更多数据了</view>
+
+</view>

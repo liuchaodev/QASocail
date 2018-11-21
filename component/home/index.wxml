@@ -1,0 +1,104 @@
+<!--pages/home/index.wxml-->
+<view class='root'>
+  <!--分割线-->
+  <view class='top_divideline'></view>
+
+  <!--banner部分-->
+  <view class="page-section page-section-spacing swiper">
+    <swiper class="swiper-box" indicator-dots='{{indicatorDots}}' class='banners' autoplay="{{autoPlay}}" interval="{{interval}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" duration="{{duration}}">
+      <block wx:for="{{urls}}" wx:key="{{urls}}">
+        <swiper-item class="banner">
+          <image src='{{item}}' class="banner_image" width="100%" height="100%"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+
+  
+
+  <!--功能部分-->
+  <view class='function_enter_container'>
+    <view bindtap='goToRank' class='function_container'>
+      <image class='function_pic' src='../../image/rank.png'></image>
+      <text class='function_name'>榜单</text>
+    </view>
+
+    <view bindtap='goToStar' class='function_container'>
+      <image class='function_pic' src='../../image/star.png'></image>
+      <text class='function_name'>赚星星</text>
+    </view>
+
+    <view bindtap='goToTrend' class='function_container'>
+      <image class='function_pic' src='../../image/trend.png'></image>
+      <text class='function_name'>动态</text>
+    </view>
+
+    <view bindtap='goToFamous' class='function_container'>
+      <image class='function_pic' src='../../image/famous.png'></image>
+      <text class='function_name'>名人</text>
+    </view>
+  </view>
+
+  <view class='home_top_title'>
+    <view class='home_top_title_left'>热门话题</view>
+    <view  class='home_top_title_right'>
+      <view  class='home_top_title_right_text' bindtap='goToAllTopics'>更多话题</view>
+      <image  class='home_top_title_right_image' src='../../image/right_arrow.png'></image>
+    </view>
+  </view>
+
+  <!--问题列表-->
+  <view class='question_item' bindtap='questionDetail' wx:key="{{item.topic_id}}" data-topicId="{{item.topic_id}}" wx:for="{{topicList}}">
+
+    <view class='question_person_and_star'>
+      <view class='question_person' catchtap='personInfo' data-userId='{{item.user_id}}'>
+        <image class='question_person_header' src="{{item.img_url==''?'../../image/default_icon.png':item.img_url}}"></image>
+        <text class='question_person_nickname'>{{item.name}}</text>
+      </view>
+      <view class='question_star'>
+        <text class='question_star_num'>{{item.red_heart}}🌟</text>
+      </view>
+    </view>
+
+    <view class='question_remark'>
+      {{item.content.txt}}
+    </view>
+
+
+    <view class='comment_and_thumb_container'>
+
+      <view class='thumb_container'>
+        <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+        <text class='comment_and_thumb_text'>{{item.like_num}}</text>
+      </view>
+
+      <view class='comment_container'>
+        <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+        <text class='comment_and_thumb_text'>{{item.comment_num}}</text>
+      </view>
+    </view>
+
+     <view class='answer_voice' wx:if="{{item.is_reply==1?true:false}}">
+        <view class='answer_voice_container'>
+          <image class='answer_voice_pic' src='../../image/voice.jpg'></image>
+        </view>
+        <text class='answer_voice_time'>1s</text>
+      </view>
+
+    <view class='time_left' wx:if="{{item.is_reply==0?true:false}}">
+      剩余：1小时28分10秒
+    </view>
+
+    <view class='question_item_innder_divideline'>
+    </view>
+
+    <view class='tell_somebody'>
+      @{{item.r_name}}
+    </view>
+
+  </view>
+
+
+
+</view>

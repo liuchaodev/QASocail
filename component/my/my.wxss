@@ -1,0 +1,100 @@
+/* pages/home/my.wxss */
+.root{
+  padding-bottom: 150rpx;
+}
+page{
+   background: #efefef;
+}
+.top_divideline {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 1rpx;
+  background: #F2F2F2;
+}
+.my_info_container{
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+  padding-top: 50rpx;
+  padding-bottom: 20rpx;
+  background: white
+}
+.my_info_pic_container{
+  position: relative
+}
+
+.my_info_pic{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.my_info_vip_pic{
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: 0rpx;
+  bottom: 20rpx;
+}
+.my_info_name{
+  margin-left: 20rpx;
+  height: 100rpx;
+  margin-top: 25rpx;
+  font-size: 34rpx;
+ color: #030303;
+
+text-align: center;
+}
+
+.my_common_item1_container,.my_common_item2_container,.my_common_item3_container,.my_common_item4_container,.my_common_item5_container,.my_common_item6_container,.my_common_item7_container,.my_common_item8_container,.my_common_item9_container,.my_common_item10_container{
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+
+.my_common_item8_container{
+  margin-top: 20rpx;
+}
+
+
+.my_common_item_pic_container{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-left: 30rpx;
+}
+.my_common_item_pic {
+  width: 40rpx;
+  height: 40rpx;
+}
+.my_info_divideline{
+  height: 20rpx;
+  background: #eeeeee;
+}
+
+.my_common_item_text {
+  
+  font-size: 32rpx;
+  color: #030303;
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-left: 20rpx;
+}
+.my_common_item_divider{
+  background:#e8e8e8;
+  margin-left: 30rpx;
+  height: 3rpx;
+}
+
+.my_common_item_container_with_divideline{
+  display: flex;
+  flex-direction: column;
+}
+.my_common_item_divider_background{
+  background: white;
+}

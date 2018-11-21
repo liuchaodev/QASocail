@@ -1,0 +1,27 @@
+/* dist/empty/empty.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+}
+.root{
+  width: 100%;
+  height: 100%;
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  z-index: 999;
+}
+.empty_pic{
+   margin-top: 40%;
+  width: 220rpx;
+  height: 150rpx;
+}
+.empty_text{
+ margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #aaa;
+
+}

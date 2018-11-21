@@ -1,0 +1,33 @@
+<!--pages/my_wallet/wallet.wxml-->
+<view class='root'>
+  <!--分割线-->
+  <view class='top_divideline'></view>
+
+  <view class='my_wallet_top_card'>
+    <view class='account_balance'>
+      <text class='account_balance_title'>账户余额🌟</text>
+      <text class='account_balance_amount'>{{userInfo.red_heart}}</text>
+    </view>
+
+    <view class='my_wallet_divideline'></view>
+    <view class='function_button'>
+      <view class='getCash' catchtap='goToCash'>提现</view>
+      <view class='rechargeMoney' catchtap='goToRecharge'>充值</view>
+      <view class='function_button_divideline'></view>
+    </view>
+  </view>
+
+  <view class='charity_title'>公益捐款</view>
+
+  <view class='unit_charity_item' wx:key = "{{index}}" wx:for="{{units}}" bindtap='goToCharityDetail'>
+
+
+    <image class='unit_pic' src='{{item.url}}'></image>
+    <!--<view class='unit_charity_item_divider'></view>-->
+
+    <view class='unit_name'>{{item.name}}</view>
+    <view class='unit_star_num'>{{item.star_num}}</view>
+
+  </view>
+
+</view>

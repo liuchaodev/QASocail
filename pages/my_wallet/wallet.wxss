@@ -1,0 +1,121 @@
+/* pages/my_wallet/wallet.wxss */
+page{
+  background-color: #efefef;
+    width: 100%;
+  height: 100%;
+  
+}
+.root{
+  padding-bottom: 30rpx;
+}
+
+.top_divideline {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 1rpx;
+  background: #F2F2F2;
+}
+.account_balance{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.function_button{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+}
+.my_wallet_top_card{
+  background: white;
+  border-radius: 18rpx;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.account_balance_title{
+  font-size: 28rpx;
+color: #333333;
+margin-top:50rpx; 
+}
+.account_balance_amount{
+  font-size: 80rpx;
+color: #333333;
+font-weight: bold;
+text-align: center;
+height: 112rpx;
+margin-top: 20rpx;
+}
+.my_wallet_divideline{
+  margin-top: 30rpx;
+  height: 1rpx;
+  background: #E8E8E8;
+}
+
+.getCash{
+
+ font-size: 34rpx;
+color: #888888;
+margin-top: 30rpx;
+margin-bottom: 30rpx;
+}
+.rechargeMoney{
+
+  font-size: 34rpx;
+color: #FD7A3E;
+margin-top: 30rpx;
+margin-bottom: 30rpx;
+}
+
+.function_button_divideline{
+  width: 1rpx;
+  height: 100%;
+  background: #e8e8e8;
+  position: absolute;
+  left: 50%;
+}
+.charity_title{
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+  margin-bottom: 40rpx;
+  font-size: 34rpx;
+  color: #000000;
+  font-weight: bold;
+}
+.unit_pic{
+  width: 100%;
+  height: 190rpx;
+  padding: 0rpx;
+  margin: 0rpx;
+}
+.unit_charity_item{
+  width: calc((100% - 90rpx )/2);
+  margin-left: 30rpx;
+  float: left;
+  background: white;
+  border-radius: 14rpx;
+  margin-bottom: 30rpx;
+}
+.unit_charity_item_divider{
+  height: 3rpx;
+  background: #e8e8e8;
+}
+.unit_name{
+  margin-top: 5rpx;
+  font-size: 26rpx;
+color: #333333;
+font-weight: bold;
+margin-left: 10rpx;
+
+}
+.unit_star_num{
+font-size: 26rpx;
+color: #333333;
+margin-left: 10rpx;
+margin-top: 5rpx;
+margin-bottom: 20rpx;
+}
+

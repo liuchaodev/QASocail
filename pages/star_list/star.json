@@ -1,0 +1,10 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "名人列表",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#efefef",
+  "usingComponents": {
+    "empty": "../../component/empty/empty"
+  }
+}

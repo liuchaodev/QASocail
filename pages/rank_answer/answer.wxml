@@ -1,0 +1,58 @@
+<!--pages/home_rank_detail/detail.wxml-->
+<view class='root'>
+  <view class='top_divideline'></view>
+  <view class='top_image_container'>
+    <image class='top_image' src='../../image/rank3.png'></image>
+  </view>
+
+  <view class="question_item" bindtap='questionDetail' wx:key="{{item.topic_id}}" data-topicId="{{item.topic_id}}" wx:for="{{dataList}}">
+
+    <view class="detail_left {{index+1<=3?'detail_top_three':'detail_other_rank'}}">{{index+1}}</view>
+
+    <view class='question_item_right'>
+
+      <view class='question_remark'>
+       {{item.content.txt}}
+      </view>
+
+      <view class='question_person_and_star'>
+        <view class='question_person' catchtap='personInfo' data-userId='{{item.user_id}}'>
+        
+          <view class='question_person_header'>
+            <image class='header' src="{{item.img_url==''?'../../image/default_icon.png':item.img_url}}"></image>
+          </view>
+
+          <view class='answer_voice_container' bindtap='listenTopic'>
+            <image class='answer_voice_pic' src='../../image/voice.jpg'></image>
+          </view>
+
+          <text class='voice_time'>1s
+          </text>
+        </view>
+
+
+        <view class='question_star'>
+          <text class='question_star_num'>{{item.red_heart}}🌟</text>
+        </view>
+      </view>
+
+      <view>
+        <text class='steal_text'>偷听人数：</text>
+        <text class='steal_num'>{{item.simulate_num}}人</text>
+      </view>
+
+    </view>
+
+
+
+  </view>
+
+
+
+
+<empty wx:if="{{empty}}" />
+  <view class='noMoreData'  wx-if="{{noMoreData}}">没有数据更多数据了</view>
+
+
+
+</view>

@@ -1,0 +1,110 @@
+<!--pages/home_trend/trend.wxml-->
+<view class='root'>
+  <view class='header'>
+
+
+    <view class='tab1_container' bindtap="swichNav" id="1">
+      <view class="{{currentTab==1? 'tab_text_selected':'tab_text_unselected'}}" style='color:{{seriousColor}}'>问我</view>
+      <view class="{{currentTab==1?'tab_line_selected':'tab_line_unselected'}}"></view>
+    </view>
+
+    <view class='tab2_container' bindtap="swichNav" id="2">
+      <view class="{{currentTab==2?'tab_text_selected':'tab_text_unselected'}}" style='color:{{seriousColor}}'>我问</view>
+      <view class="{{currentTab==2?'tab_line_selected':'tab_line_unselected'}}"></view>
+    </view>
+
+  </view>
+
+
+  <view class='ask_me_container' hidden="{{currentTab==1?'':'hidden'}}">
+<empty wx:if="{{empty1}}"/>
+    <view class='question_item' wx:key="{{index}}" wx:for="{{askmelist}}" bindtap='questionDetail' data-topicId="{{item.topic_id}}">
+
+      <view class='question_person_and_star'>
+        <view class='question_person' catchtap='personInfo'>
+          <image class='question_person_header' src='{{item.img_url}}'></image>
+          <text class='question_person_nickname'>{{item.name}}</text>
+        </view>
+        <view class='question_star'>
+          <text class='question_star_num'>{{item.red_heart}}🌟</text>
+        </view>
+      </view>
+
+      <view class='question_remark'>
+        {{item.content.txt}}
+      </view>
+
+      <view class='time_left'>
+        剩余：2小时30分
+      </view>
+
+      <view class='question_item_innder_divideline'>
+      </view>
+
+      <view catchtap='answerQuestion' class='tell_somebody'>
+        立即回答
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class='ask_me_container' hidden="{{currentTab==2?'':'hidden'}}">
+ <empty wx:if="{{empty2}}"/>
+    <view class='question_item' wx:key="{{index}}" wx:for="{{iasklist}}"  bindtap='questionDetail' data-topicId="{{item.topic_id}}">
+
+      <view class='question_person_and_star'>
+        <view class='question_person' catchtap='personInfo'>
+          <image class='question_person_header' src='{{item.img_url}}'></image>
+          <text class='question_person_nickname'>{{item.name}}</text>
+        </view>
+        <view class='question_star'>
+          <text class='question_star_num'>{{item.red_heart}}🌟</text>
+        </view>
+      </view>
+
+      <view class='question_remark'>
+        {{item.content.txt}}
+      </view>
+
+
+      <view class='comment_and_thumb_container'>
+
+        <view class='thumb_container'>
+          <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+          <text class='comment_and_thumb_text'>{{item.comment_num}}</text>
+        </view>
+
+        <view class='comment_container'>
+          <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+          <text class='comment_and_thumb_text'>{{item.like_num}}</text>
+        </view>
+      </view>
+
+      <view class='time_left'>
+
+      </view>
+
+      <view class='question_item_innder_divideline'>
+      </view>
+
+      <view class='tell_somebody'>
+        @王思聪
+      </view>
+
+
+    </view>
+
+  </view>
+
+  <view class='noMoreData' hidden="{{currentTab==1?'':'hidden'}}" wx-if="{{noMoreData1}}">没有数据更多数据了</view>
+  <view class='noMoreData' hidden="{{currentTab==2?'':'hidden'}}" wx-if="{{noMoreData2}}">没有数据更多数据了</view>
+
+  <view hidden='hidden' class='tui-countdown-content' wx:for="{{countDownList}}" wx:key="countDownList">
+    剩余
+    <text class='tui-conutdown-box'>{{item.day}}</text>天
+    <text class='tui-conutdown-box'>{{item.hou}}</text>时
+    <text class='tui-conutdown-box'>{{item.min}}</text>分
+    <text class='tui-conutdown-box tui-countdown-bg'>{{item.sec}}</text>秒
+  </view>
+</view>

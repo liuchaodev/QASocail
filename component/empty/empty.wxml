@@ -1,0 +1,7 @@
+<!--dist/empty/empty.wxml-->
+<view class='root'>
+
+  <image class='empty_pic' src='../../image/default_topic.png'></image>
+
+  <view class='empty_text'>没有相关内容</view>
+</view>

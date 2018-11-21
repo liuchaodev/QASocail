@@ -1,0 +1,21 @@
+<!--pages/home_rank/rank.wxml-->
+<view>
+  <!--分割线-->
+  <view class='top_divideline'></view>
+
+  <view bindtap='goToCharityRankDetail' class='rank_item1_container'>
+    <image class='rank_item' src='../../image/rank_charity_donation.png'></image>
+  </view>
+
+  <view bindtap='goToQuesionRankDetail' class='rank_item2_container'>
+    <image class='rank_item' src='../../image/rank_best_question.png'></image>
+  </view>
+
+  <view bindtap='goToAnswerRankDetail' class='rank_item3_container'>
+    <image class='rank_item' src='../../image/rank_best_answer.png'></image>
+  </view>
+
+  <view bindtap='goToPopularRankDetail' class='rank_item4_container'>
+    <image class='rank_item' src='../../image/rank_most_popular.png'></image>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+/* pages/my_about/about.wxss */
+.root {
+  padding-bottom: 50rpx;
+}
+.top_divideline {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 1rpx;
+  background: #F2F2F2;
+}
+.about_text{
+  font-size: 34rpx;
+color: #030303;
+text-align: justify;
+margin: 30rpx;
+line-height: 1.5;
+}

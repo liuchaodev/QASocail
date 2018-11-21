@@ -1,0 +1,124 @@
+<!--pages/home/my.wxml-->
+<view class='root'>
+  <!--分割线-->
+  <view class='top_divideline'></view>
+
+  <view class='my_info_container'>
+    <view class='my_info_pic_container'>
+      <image class=' my_info_pic' src="{{userInfo.img_url==''?'../../image/default_icon.png':userInfo.img_url}}"></image>
+      <image class=' my_info_vip_pic' wx:if="{{userInfo.is_bigV!=0}}" src='../../image/member_vip.png'></image>
+    </view>
+    <text class='my_info_name'>{{userInfo.name}}</text>
+  </view>
+
+  <view class='my_info_divideline'></view>
+
+  <view bindtap='goToWallet' class='my_common_item1_container'>
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon1.png '></image>
+    </view>
+    <text class='my_common_item_text '>我的钱包</text>
+  </view>
+
+  <view class='my_common_item_divider_background'>
+    <view class='my_common_item_divider'></view>
+  </view>
+
+
+
+  <view bindtap='goToTrade' class='my_common_item2_container'>
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon2.png '></image>
+    </view>
+    <text class='my_common_item_text '>交易记录</text>
+  </view>
+
+  <view class='my_common_item_divider_background'>
+    <view class='my_common_item_divider'></view>
+  </view>
+
+
+  <view bindtap='goToCrowedFund' class='my_common_item3_container'>
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon3.png '></image>
+    </view>
+    <text class='my_common_item_text '>我的众筹</text>
+  </view>
+
+  <view class='my_common_item_divider_background'>
+    <view class='my_common_item_divider'></view>
+  </view>
+
+  <view bindtap='goToAsk' class='my_common_item4_container'>
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon4.png '></image>
+    </view>
+    <text class='my_common_item_text '>我的提问</text>
+  </view>
+
+  <view class='my_common_item_divider_background'>
+    <view class='my_common_item_divider'></view>
+  </view>
+
+  <view bindtap='goToAnswer'  class='my_common_item5_container'>
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon5.png '></image>
+    </view>
+    <text class='my_common_item_text '>我的回答</text>
+  </view>
+
+  <view class='my_common_item_divider_background'>
+    <view class='my_common_item_divider'></view>
+  </view>
+
+  <view bindtap='goToAttention' class='my_common_item6_container'>
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon6.png '></image>
+    </view>
+    <text class='my_common_item_text '>关注的人</text>
+  </view>
+
+  <view class='my_common_item_divider_background'>
+    <view class='my_common_item_divider'></view>
+  </view>
+
+  <view bindtap='goToCollect' class='my_common_item7_container'>
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon7.png '></image>
+    </view>
+    <text class='my_common_item_text '>我的收藏</text>
+  </view>
+
+ 
+
+  <view bindtap='goToPlatForm' class='my_common_item8_container'>
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon8.png '></image>
+    </view>
+    <text class='my_common_item_text '>平台规则</text>
+  </view>
+
+  <view class='my_common_item_divider_background'>
+    <view class='my_common_item_divider'></view>
+  </view>
+
+  <view bindtap='goToAbout' class='my_common_item9_container'>
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon9.png '></image>
+    </view>
+    <text class='my_common_item_text '>关于我们</text>
+  </view>
+
+  <view class='my_common_item_divider_background'>
+    <view class='my_common_item_divider'></view>
+  </view>
+
+  <view class='my_common_item10_container' bindtap='goToFeedback' >
+    <view class='my_common_item_pic_container'>
+      <image class='my_common_item_pic ' src='../../image/icon10.png '></image>
+    </view>
+    <text class='my_common_item_text '>问题反馈</text>
+  </view>
+
+
+</view>

@@ -1,0 +1,84 @@
+<!--pages/home/index.wxml-->
+<template name="home" >
+<view class='root'>
+  <!--分割线-->
+  <view class='top_divideline'></view>
+
+  <!--banner部分-->
+  <view class="page-section page-section-spacing swiper">
+    <swiper class="swiper-box" indicator-dots='{{indicatorDots}}' class='banners' autoplay="{{autoPlay}}" interval="{{interval}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" duration="{{duration}}">
+      <block wx:for="{{urls}}" wx:key="{{urls}}">
+        <swiper-item class="banner">
+          <image src='{{item}}' class="banner_image" width="100%" height="100%"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+
+  <!--功能部分-->
+  <view class='function_enter_container'>
+    <view bindtap='goToRank' class='function_container'>
+      <image class='function_pic' src='../../image/rank.png'></image>
+      <text class='function_name'>榜单</text>
+    </view>
+
+    <view bindtap='goToStar' class='function_container'>
+      <image class='function_pic' src='../../image/star.png'></image>
+      <text class='function_name'>赚星星</text>
+    </view>
+
+    <view bindtap='goToTrend' class='function_container'>
+      <image class='function_pic' src='../../image/trend.png'></image>
+      <text class='function_name'>动态</text>
+    </view>
+  </view>
+
+  <!--问题列表-->
+  <view class='question_item' bindtap='questionDetail' wx:for="{{asklist}}">
+
+    <view class='question_person_and_star'>
+      <view class='question_person' catchtap='personInfo'>
+        <image class='question_person_header' src='{{item.headurl}}'></image>
+        <text class='question_person_nickname'>{{item.nickname}}</text>
+      </view>
+      <view class='question_star'>
+        <text class='question_star_num'>10🌟</text>
+      </view>
+    </view>
+
+    <view class='question_remark'>
+      聪聪，你见多识广，怎么才能火眼金睛的从白莲花的外表看出绿色
+    </view>
+
+
+    <view class='comment_and_thumb_container'>
+
+      <view class='thumb_container'>
+        <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+        <text class='comment_and_thumb_text'>20</text>
+      </view>
+
+      <view class='comment_container'>
+        <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+        <text class='comment_and_thumb_text'>100</text>
+      </view>
+    </view>
+
+    <view class='time_left'>
+      剩余：2小时30分
+    </view>
+
+    <view class='question_item_innder_divideline'>
+    </view>
+
+    <view class='tell_somebody'>
+      @王思聪
+    </view>
+
+  </view>
+
+
+
+</view>
+</template>

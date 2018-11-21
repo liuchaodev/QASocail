@@ -1,0 +1,95 @@
+<!--pages/my_info/info.wxml-->
+<!--分割线-->
+<view class='root'>
+<view class='top_divideline'></view>
+
+<view class='attention_item'>
+  <view class='attention_item_content'>
+    <view class='my_info_container'>
+      <view class='my_info_pic_container'>
+        <image class='my_info_pic'  src="{{userInfo.img_url==''?'../../image/default_icon.png':userInfo.img_url}}"></image>
+        <image class=' my_info_vip_pic' src='../../image/member_vip.png' wx:if="{{userInfo.is_bigV==1?true:false}}"></image>
+      </view>
+      <text class='my_info_name'>{{userInfo.name}}</text>
+    </view>
+
+    <view class='attention_item_right'>
+      <view hidden='hidden' class='attention_item_button_text'>+关注</view>
+    </view>
+  </view>
+  <view class='thumbs_and_fans_container'>
+    <text class='thumbs_num'>{{userInfo.like_num}}</text>
+    <text class='thumbs_and_fans_text'>获赞</text>
+    <text class='fans_num'>{{userInfo.follower_num}}</text>
+    <text class='thumbs_and_fans_text'>粉丝</text>
+  </view>
+</view>
+
+<view class='tablayout'>
+  <view class='tab1' bindtap="swichNav" id="1">
+    <text class="{{currentTab==1? 'tab_text_selected':'tab_text_unselected'}}">此人提问流</text>
+    <view class="{{currentTab==1?'tab_line_selected':'tab_line_unselected'}}"></view>
+  </view>
+
+  <view class='tab2' bindtap="swichNav" id="2">
+    <text class="tab_text {{currentTab==2? 'tab_text_selected':'tab_text_unselected'}}">此人回答流</text>
+    <view class="{{currentTab==2?'tab_line_selected':'tab_line_unselected'}}"></view>
+  </view>
+</view>
+
+
+
+
+
+<view class='answer_me_container'>
+<view hidden="{{currentTab==1?'':'hidden'}}" class='question_title' >
+  全部问题（40）
+</view>
+
+    <view class='question_item' wx:key = "{{index}}" wx:for="{{askmelist}}" hidden="{{currentTab==1?'':'hidden'}}" bindtap='questionDetail'>
+
+      <view class='question_person_and_star'>
+        <view class='question_person'>
+          <image class='question_person_header' src='{{item.headurl}}'></image>
+          <text class='question_person_nickname'>{{item.nickname}}</text>
+        </view>
+        <view class='question_star'>
+          <text class='question_star_num'>10🌟</text>
+        </view>
+      </view>
+
+      <view class='question_remark'>
+        聪聪，你见多识广，怎么才能火眼金睛的从白莲花的外表看出绿色
+      </view>
+
+      <view class='comment_and_thumb_container'>
+
+        <view class='thumb_container'>
+          <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+          <text class='comment_and_thumb_text'>20</text>
+        </view>
+
+        <view class='comment_container'>
+          <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+          <text class='comment_and_thumb_text'>100</text>
+        </view>
+      </view>
+
+      <view class='answer_voice'>
+        <view class='answer_voice_container'>
+          <image class='answer_voice_pic' src='../../image/voice.jpg'></image>
+        </view>
+        <text class='answer_voice_time'>1s</text>
+      </view>
+
+      <view class='question_item_innder_divideline'>
+      </view>
+
+      <view class='tell_somebody'>
+        @王思聪
+      </view>
+
+    </view>
+
+  </view>
+  </view>

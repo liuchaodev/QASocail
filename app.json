@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/new_home/home",
+    "pages/home/index",
+    "pages/question/question",
+    "pages/question_detail/question",
+    "pages/my/my",
+    "pages/my_wallet/wallet",
+    "pages/my_crowedfund/crowedfund",
+    "pages/my_crowedfund_detail/detail",
+    "pages/my_crowedfund_rank/rank",
+    "pages/my_ask/ask",
+    "pages/my_answer/answer",
+    "pages/my_attention/attention",
+    "pages/my_collect/collect",
+    "pages/my_info/info",
+    "pages/my_platform/platform",
+    "pages/my_about/about",
+    "pages/my_trade/trade",
+    "pages/my_wallet_recharge/recharge",
+    "pages/my_wallet_charity/charity",
+    "pages/home_rank/rank",
+    "pages/home_rank_detail/detail",
+    "pages/home_star/star",
+    "pages/home_trend/trend",
+    "pages/home_question_detail/detail",
+    "pages/comment_input/comment",
+   "pages/star_list/star",
+   "pages/my_wallet_money/money",
+    "pages/rank_charity/charity",
+    "pages/rank_question/question",
+    "pages/rank_answer/answer",
+    "pages/rank_popular/popular",
+    "pages/feedback/feedback",
+    "pages/all_topic/topic"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "呵呵哒",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#efefef"
+  }
+  
+
+}

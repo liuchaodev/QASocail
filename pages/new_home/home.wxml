@@ -1,0 +1,17 @@
+<!--pages/new_home/home.wxml-->
+
+<view class='rootx'>
+
+
+
+
+
+  <home wx:if="{{choose_index==0}}" topicList="{{topicList}}"></home>
+  <my wx:if="{{choose_index==2}}" userInfo="{{userInfo}}"></my>
+
+
+
+
+
+  <tabbar class="tabbbb" bindchange="tabChange" data="{{tabbar}}"></tabbar>
+</view>

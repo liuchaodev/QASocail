@@ -1,0 +1,77 @@
+<!--pages/home_star/star.wxml-->
+<view>
+  <view class='get_star_container'>
+    <text class='get_star_title'>昨日赚取的星星</text>
+    <text class='get_star_num'>{{lastDayStar}}颗</text>
+    <text class='get_star_total_num'>累计星星：{{totalStar}}</text>
+  </view>
+
+  <view class='task_list_container'>
+
+    <view class='task_title_container'>
+      <text class='task_title'>每日任务</text>
+    </view>
+
+    <view class='task_divideline_background'>
+      <view class='task_divideline'></view>
+    </view>
+
+
+
+    <view class='task_container'>
+      <view class='task_left'>
+        <view class='task_icon_container'>
+          <image class='task_icon' src='../../image/task1.png'></image>
+        </view>
+        <view class='task_text'>
+          <text class='task_text_top'>连续登陆</text>
+          <text class='task_text_bottom'>+5颗星星</text>
+        </view>
+      </view>
+
+      <view class='task_right'>
+        <text class='task_button' >{{isDailyLogin==1?"已完成":"待完成"}}</text>
+      </view>
+    </view>
+
+ <view class='task_divideline_background'>
+      <view class='task_divideline'></view>
+    </view>
+
+     <view class='task_container'>
+      <view class='task_left'>
+        <view class='task_icon_container'>
+          <image class='task_icon' src='../../image/task2.png'></image>
+        </view>
+        <view class='task_text'>
+          <text class='task_text_top'>提问</text>
+          <text class='task_text_bottom'>+2颗星星</text>
+        </view>
+      </view>
+
+      <view class='task_right'>
+        <text class='task_button' bindtap='goToQuestion'>{{isDailyQuestion==1?"已完成":"待完成"}}</text>
+      </view>
+    </view>
+
+ <view class='task_divideline_background'>
+      <view class='task_divideline'></view>
+    </view>
+
+     <view class='task_container'>
+      <view class='task_left'>
+        <view class='task_icon_container'>
+          <image class='task_icon' src='../../image/task3.png'></image>
+        </view>
+        <view class='task_text'>
+          <text class='task_text_top'>众筹、评论、点赞</text>
+          <text class='task_text_bottom'>+1颗星星（每日计一次）</text>
+        </view>
+      </view>
+
+      <view class='task_right'>
+        <text class='task_button' bindtap='goToTopicList'>{{isDailyOther==1?"已完成":"待完成"}}</text>
+      </view>
+    </view>
+  </view>
+</view>

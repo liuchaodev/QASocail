@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "我的关注",
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#efefef",
+  "usingComponents": {
+    "empty": "../../component/empty/empty"
+  }
+}

@@ -1,0 +1,232 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "wx1f41fe6b19da4a13",
+	"projectname": "demo",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 31,
+			"list": [
+				{
+					"id": -1,
+					"name": "提问",
+					"pathName": "pages/home/question",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/home/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "榜单",
+					"pathName": "pages/home_rank/rank",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "赚星星",
+					"pathName": "pages/home_star/star",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的钱包",
+					"pathName": "pages/my_wallet/wallet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/home/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的众筹",
+					"pathName": "pages/my_crowedfund/crowedfund",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页动态",
+					"pathName": "pages/home_trend/trend",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的提问",
+					"pathName": "pages/my_ask/ask",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的回答",
+					"pathName": "pages/my_answer/answer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关注的人",
+					"pathName": "pages/my_attention/attention",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/my_collect/collect",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页问题详情",
+					"pathName": "pages/home_question_detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人主页",
+					"pathName": "pages/my_info/info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "平台规则",
+					"pathName": "pages/my_platform/platfrom",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/my_about/about",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "交易记录",
+					"pathName": "pages/my_trade/trade",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "充值",
+					"pathName": "pages/my_wallet_recharge/recharge",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "公益捐款",
+					"pathName": "pages/my_wallet_charity/charity",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "榜单详情",
+					"pathName": "pages/home_rank_detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "回答详情",
+					"pathName": "pages/question_detail/question",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "众筹详情",
+					"pathName": "pages/my_crowedfund_detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "众筹参与排名",
+					"pathName": "pages/my_crowedfund_rank/rank",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "新主页",
+					"pathName": "pages/new_home/home",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "评论",
+					"pathName": "pages/comment_input/comment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "明星列表",
+					"pathName": "pages/star_list/star",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现",
+					"pathName": "pages/my_wallet_money/money",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "公益排行榜",
+					"pathName": "pages/rank_charity/charity",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "最热提问榜",
+					"pathName": "pages/rank_question/question",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "最热回答榜",
+					"pathName": "pages/rank_answer/answer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "最佳人气榜",
+					"pathName": "pages/rank_popular/popular",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "问题反馈",
+					"pathName": "pages/feedback/feedback"
+				}
+			]
+		}
+	}
+}

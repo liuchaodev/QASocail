@@ -1,0 +1,29 @@
+/* pages/home_rank/rank.wxss */
+
+page {
+  background-color: #efefef;
+}
+
+.top_divideline {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 1rpx;
+  background: #f2f2f2;
+}
+
+.rank_item1_container {
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.rank_item2_container, .rank_item3_container, .rank_item4_container {
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+}
+
+.rank_item {
+  width: 100%;
+  height: 230rpx;
+}

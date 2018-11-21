@@ -1,0 +1,28 @@
+<!--pages/my_attention/attention.wxml-->
+<view class='root'>
+  <view class='top_divideline'></view>
+
+  <view class='attention_item' wx:key = "{{index}}"  wx:for="{{dataList}}">
+    <view class='attention_item_content'>
+      <view class='my_info_container'>
+        <view class='my_info_pic_container'>
+          <image class=' my_info_pic' src="{{item.img_url==''?'../../image/default_icon.png':item.img_url}}"></image>
+          <image class=' my_info_vip_pic' src='../../image/member_vip.png'></image>
+        </view>
+        <text class='my_info_name'>{{item.name}}</text>
+      </view>
+
+      <view class='attention_item_right'>
+        <view class='attention_item_button_text' data-userId='{{item.user_id}}' data-index = "{{index}}" catchtap='unAttention'>取消关注</view>
+      </view>
+    </view>
+    <view class='my_common_item_divider_background'>
+      <view class='my_common_item_divider'></view>
+    </view>
+  </view>
+
+
+ <empty wx:if="{{empty}}" />
+  <view wx-if="{{noMoreData}}">当前没有数据</view>
+
+</view>

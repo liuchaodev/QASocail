@@ -1,0 +1,36 @@
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入查询内容" value="{{input_code}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+  <view class="weui-search-bar__cancel-btn" bindtap="wxSearchConfirm">
+    <text class='clear' bindtap='clearContent'>清除</text>
+  </view>
+</view>
+
+<view class='attention_item' bindtap='selectPerson' data-userId='{{item.user_id}}' data-item='{{item}}' wx:key="{{index}}" wx:for="{{dataList}}">
+  <view class='attention_item_content'>
+    <view class='my_info_container'>
+      <view class='my_info_pic_container'>
+        <image class=' my_info_pic' src="{{item.img_url==''?'../../image/default_icon.png':item.img_url}}"></image>
+        <image class=' my_info_vip_pic' src='../../image/member_vip.png' wx:if="{{item.is_bigV==1?true:false}}"></image>
+      </view>
+      <text class='my_info_name'>{{item.name}}</text>
+    </view>
+
+    <view class='attention_item_right'>
+      <view class='attention_item_button_text' data-userId='{{item.user_id}}' catchtap='attention'>关注</view>
+    </view>
+  </view>
+  <view class='my_common_item_divider_background'>
+    <view class='my_common_item_divider'></view>
+  </view>
+
+  <empty wx:if="{{empty}}" />
+  <view class='noMoreData'  wx-if="{{noMoreData}}">没有数据更多数据了</view>
+</view>

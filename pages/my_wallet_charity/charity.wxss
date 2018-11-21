@@ -1,0 +1,120 @@
+/* pages/my_wallet_charity/charity.wxss */
+
+page {
+  background-color: #efefef;
+  width: 100%;
+
+  margin-bottom: 100rpx;
+}
+.root{
+  position: relative;
+ 
+}
+
+.charity_pic_container {
+  height: 320rpx;
+  width: 100%;
+}
+
+.charity_pic {
+  width: 100%;
+  height: 100%;
+}
+
+.active_person_and_star_container {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.acitive_person {
+  margin-left: 30rpx;
+}
+
+.acitive_star {
+  margin-left: 80rpx;
+}
+
+.acitive_person_num, .acitive_star_num {
+  font-size: 44rpx;
+  color: #333;
+}
+
+.acitive_person_unit, .acitive_star_unit {
+  margin-top: 5rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.charity_unit_container {
+  background: white;
+  margin-top: 30rpx;
+  padding-top: 36rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 36rpx;
+}
+
+.charity_unit_name {
+  font-size: 34rpx;
+  color: #333;
+}
+
+.charity_unit_detail {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #666;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.charity_framework_container {
+  margin-top: 30rpx;
+  background: white;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 36rpx;
+  padding-bottom: 36rpx;
+}
+
+.charity_framework_title {
+  display: flex;
+  flex-direction: row;
+}
+
+.charity_framework_icon_container {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.charity_framework_icon {
+  margin-top: 5rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.charity_framework_text {
+  font-size: 34rpx;
+  color: #333;
+  margin-left: 20rpx;
+}
+
+.charity_framework_detail {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.charity_button {
+  text-align: center;
+  background: #fd7a3e;
+  font-size: 32rpx;
+  width: 100%;
+  color: #fff;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  position: fixed;
+  bottom: 0rpx;
+}

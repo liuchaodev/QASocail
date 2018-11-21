@@ -1,0 +1,76 @@
+<!--pages/home_question_detail/detail.wxml-->
+<!--问题列表-->
+<view class='root'>
+  <!--分割线-->
+  <view class='top_divideline'></view>
+  <view class='question_item'>
+
+    <view class='question_person_and_star'>
+      <view class='question_person' catchtap='personInfo'>
+        <image class='question_person_header' src='../../image/header_icon1.png'></image>
+        <text class='question_person_nickname'>木小孩</text>
+      </view>
+      <view class='question_star'>
+        <text class='question_star_num'>10🌟</text>
+      </view>
+    </view>
+
+    <view class='question_remark'>
+      聪聪，你见多识广，怎么才能火眼金睛的从白莲花的外表看出绿色
+    </view>
+
+
+    <view class='comment_and_thumb_container'>
+
+      <view class='thumb_container'>
+        <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+        <text class='comment_and_thumb_text'>20</text>
+      </view>
+
+      <view class='comment_container'>
+        <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+        <text class='comment_and_thumb_text'>100</text>
+      </view>
+    </view>
+
+    <view class='time_left'>
+      剩余：2小时30分
+    </view>
+
+    <view class='question_item_innder_divideline'>
+    </view>
+
+    <view class='tell_somebody'>
+      @王思聪
+    </view>
+
+  </view>
+
+  <view class='bottom_button_container1'>
+    <view class='bottom_button1'>
+      <text class='bottom_button_text1'>点击录音</text>
+
+    </view>
+    <view class='bottom_button_divideline1'></view>
+    <view class='bottom_button1'>
+      <text class='bottom_button_text1'>点击结束</text>
+
+    </view>
+    <view class='bottom_button_divideline1'></view>
+    <view class='bottom_button1'>
+      <text class='bottom_button_text1'>点击播放</text>
+
+    </view>
+    <view class='bottom_button_divideline1'></view>
+    <view class='bottom_button1'>
+      <text class='bottom_button_text1'>点击取消</text>
+
+    </view>
+    <view class='bottom_button_divideline1'></view>
+    <view class='bottom_button1'>
+      <text class='bottom_button_text1'>点击发送</text>
+
+    </view>
+  </view>
+</view>
+

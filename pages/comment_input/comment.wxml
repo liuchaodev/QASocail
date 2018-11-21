@@ -1,0 +1,11 @@
+<!--pages/comment_input/comment.wxml-->
+<view>
+ <view class='top_divideline'></view>
+ <view class="message_content_container">
+
+    <textarea bindinput="bindinput" class='message_content' placeholder="请输入评论内容" />
+
+  </view>
+
+  <view class='commit_question' bindtap='commitComment'>评论</view>
+</view>

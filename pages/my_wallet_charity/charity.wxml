@@ -1,0 +1,38 @@
+<!--pages/my_wallet_charity/charity.wxml-->
+<view root>
+<view class='charity_pic_container'>
+  <image class='charity_pic' src='../../image/charity.jpg'></image>
+</view>
+
+<view class='active_person_and_star_container'>
+  <view class='acitive_person'>
+  <view class='acitive_person_num'>200</view>
+  <view class='acitive_person_unit'>参与人数（人）</view>
+  </view>
+  <view class='acitive_star'>
+  <view class='acitive_star_num'>30000</view>
+  <view class='acitive_star_unit'>获取星星（颗）</view>
+  </view>
+</view>
+
+
+<view class='charity_unit_container'>
+<view class='charity_unit_name'>中国红十字协会</view>
+<view class='charity_unit_detail'>中国红十字协会是中华人民共和国唯一的红十字组织，是国际红十字运动的成员</view>
+</view>
+
+
+
+<view class='charity_framework_container'>
+<view class='charity_framework_title'>
+  <view class='charity_framework_icon_container'><image class="charity_framework_icon" src='../../image/rank.png'></image></view>
+  <view class='charity_framework_text'>公益结构介绍</view>
+</view>
+<view class='charity_framework_detail'>红十字国际委员会是1863年2月9日由瑞士人亨利·杜南倡议成立。当时称为“伤兵救护国际委员会”，1880年改为现名。它是世界上最早成立的红十字组织，是瑞士的一个民间团体。它完全由瑞士公民组成，并受瑞士法律的是世界上最早成立的红十字组织，是瑞士的一个民间团体。它完全由瑞士公民组成，并受瑞士法律的是世界上最早成立的红十字组织，是瑞士的一个民间团体。它完全由瑞士公民组成，并受瑞士法律的是世界上最早成立的红十字组织，是瑞士的一个民间团体。它完全由瑞士公民组成，并受瑞士法律的保护和约束，总部设在日内瓦。</view>
+</view>
+
+
+<view class='charity_button'>我要捐款</view>
+
+
+</view>

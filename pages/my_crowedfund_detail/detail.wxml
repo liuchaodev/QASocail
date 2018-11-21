@@ -1,0 +1,150 @@
+<!--pages/home_question_detail/detail.wxml-->
+<!--问题列表-->
+<view class='root'>
+  <!--分割线-->
+  <view class='top_divideline'></view>
+
+  <view class='ask_me_container'>
+    <view class='question_item'>
+
+      <view class='question_person_and_star'>
+        <view class='question_person' catchtap='personInfo' data-userId='{{dataList.user_id}}'>
+          <image class='question_person_header' src="{{dataList.img_url==''?'../../image/default_icon.png':dataList.img_url}}"></image>
+          <text class='question_person_nickname'>{{dataList.name}}</text>
+        </view>
+        <view class='question_star'>
+          <text class='question_star_num'>{{dataList.red_heart}}🌟</text>
+        </view>
+      </view>
+
+      <view class='question_remark'>
+        {{dataList.content.txt}}
+      </view>
+
+      <view class='comment_and_thumb_container'>
+
+        <view class='thumb_container'>
+          <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+          <text class='comment_and_thumb_text'>{{dataList.like_num}}</text>
+        </view>
+
+        <view class='comment_container'>
+          <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+          <text class='comment_and_thumb_text'>{{dataList.comment_num}}</text>
+        </view>
+      </view>
+
+
+      <view class='crowedfund_container' wx:if="{{!dataList.reply_content.audio}}">
+        <view class='crowedfund_left_time'>剩余：19:20:30</view>
+        <view class='crowedfund_button' data-topicId='{{dataList.topic_id}}' catchtap='goToCrowedFundDetail'>众筹项目</view>
+      </view>
+
+      <view class='question_item_innder_divideline'>
+      </view>
+
+      <view class='tell_somebody'>
+        @{{dataList.r_name}}
+      </view>
+
+    </view>
+
+  </view>
+
+
+
+  <view class='answer_voice' wx:if="{{dataList.is_reply!=0}}">
+    <view class='answer_voice_container' catchtap='listenTopic'>
+      <image class='answer_voice_pic' src='../../image/voice.jpg'></image>
+      <view class='answer_voice_time'>1s</view>
+    </view>
+  </view>
+
+
+  <view class='bottom_button_container' wx:if="{{dataList.user_id!=dataList.r_user_id}}">
+    <view class='bottom_button' catchtap='collectTopic' data-topicId="{{dataList.topic_id}}">
+      <image class='bottom_pic' src="{{is_fav==0?'../../image/collect_unselected.png':'../../image/collect_selected.png'}}"></image>
+      <text class='bottom_button_text'>收藏</text>
+
+    </view>
+    <view class='bottom_button_divideline'></view>
+    <view class='bottom_button' catchtap='commentTopic' data-topicId="{{dataList.topic_id}}">
+      <image class='bottom_pic' src='../../image/comment.png'></image>
+      <text class='bottom_button_text'>评论</text>
+
+    </view>
+    <view class='bottom_button_divideline'></view>
+    <view class='bottom_button' data-topicId='{{dataList.topic_id}}' catchtap='thumbUp'>
+      <image class='bottom_pic' src="{{is_like==0?'../../image/thumb_unselected.png':'../../image/thumb_selected.png'}}"></image>
+      <text class='bottom_button_text'>{{like_num}}</text>
+
+    </view>
+    <view class='bottom_button_divideline'></view>
+    <view class='bottom_button'>
+      <image class='bottom_pic' src='../../image/collect_unselected.png'></image>
+      <text class='bottom_button_text'>{{dataList.red_heart}}</text>
+    </view>
+
+  </view>
+
+<view class='bottom_button_container1'  wx:if="{{dataList.user_id==dataList.r_user_id}}">
+    <view class='bottom_button1' catchtap='startRecordMp3'>
+      <text class='bottom_button_text1'>点击录音</text>
+
+    </view>
+    <view class='bottom_button_divideline1'></view>
+    <view class='bottom_button1' catchtap='stopRecord'>
+      <text class='bottom_button_text1'>点击结束</text>
+
+    </view>
+    <view class='bottom_button_divideline1'></view>
+    <view class='bottom_button1' catchtap='playRecord'>
+      <text class='bottom_button_text1'>点击播放</text>
+
+    </view>
+    <view class='bottom_button_divideline1'></view>
+    <view class='bottom_button1' catchtap='cancelRecord'>
+      <text class='bottom_button_text1'>点击取消</text>
+
+    </view>
+    <view class='bottom_button_divideline1'></view>
+    <view class='bottom_button1' catchtap='uploadMic'>
+      <text class='bottom_button_text1'>点击发送</text>
+
+    </view>
+  </view>
+
+  
+
+
+
+  <view class='answer_voice' hidden='hidden'>
+    <view class='answer_voice_container'>
+      <image class='answer_voice_pic' src='../../image/voice.jpg'></image>
+      <view class='answer_voice_time'>1s</view>
+    </view>
+
+  </view>
+
+
+  <view class='comment_num' wx:if="{{dataList.comment_num>0}}">评论({{dataList.comment_num}})</view>
+
+  <view class='comment_item_all' wx:key="{{index}}" wx:for="{{dataList.comments}}">
+    <view class='comment_item_content'>
+
+      <view class='comment_header_pic_container'>
+        <image class='comment_header_pic'  src="{{item.img_url==''?'../../image/default_icon.png':item.img_url}}"></image>
+      </view>
+
+      <view class='comment_text'>
+        <view class='comment_nickname'>{{item.name}}</view>
+        <view class='comment_content'>{{item.content.txt}}</view>
+      </view>
+    </view>
+    <view class='my_common_item_divider_background'>
+      <view class='my_common_item_divider'></view>
+    </view>
+
+  </view>
+
+</view>

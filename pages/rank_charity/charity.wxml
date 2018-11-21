@@ -1,0 +1,42 @@
+<!--pages/home_rank_detail/detail.wxml-->
+<view class='root'>
+  <view class='top_divideline'></view>
+  <view class='top_image_container'>
+  <image class='top_image' src='../../image/rank1.png'></image>
+  </view>
+  <view class='attention_item' wx:for="{{dataList}}">
+    <view class='detail_item'>
+
+      <view class="detail_left {{item.rank<=3?'detail_top_three':'detail_other_rank'}}">{{item.rank}}</view>
+      <view class='detail_right'>
+
+        <view class='attention_item_content'>
+          <view class='my_info_container'>
+            <view class='my_info_pic_container'>
+              <image class=' my_info_pic' src='{{item.headurl}}'></image>
+
+            </view>
+            <text class='my_info_name'>{{item.nickname}}</text>
+          </view>
+
+          <view class='attention_item_right'>
+            <view class='attention_item_button_text'>{{item.amount}}</view>
+            <view class='attention_item_text'>捐赠金额</view>
+         
+          </view>
+        </view>
+        <view class='my_common_item_divider_background'>
+          <view class='my_common_item_divider'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+   
+
+
+
+
+</view>

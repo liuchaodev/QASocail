@@ -1,0 +1,53 @@
+<!--pages/home_rank_detail/detail.wxml-->
+<view class='root'>
+  <view class='top_divideline'></view>
+  <view class='attention_item' wx:for="{{attentionPerson}}">
+    <view class='detail_item'>
+
+      <view class="detail_left {{item.rank<=3?'detail_top_three':'detail_other_rank'}}">{{item.rank}}</view>
+      <view class='detail_right'>
+
+        <view class='attention_item_content'>
+          <view class='my_info_container'>
+            <view class='my_info_pic_container'>
+              <image class=' my_info_pic' src='{{item.headurl}}'></image>
+              <image class=' my_info_vip_pic' src='../../image/member_vip.png'></image>
+            </view>
+            <text class='my_info_name'>{{item.nickname}}</text>
+          </view>
+
+          <view class='attention_item_right'>
+            <view class='attention_item_button_text'>{{item.amount}}✨</view>
+          </view>
+        </view>
+        <view class='my_common_item_divider_background'>
+          <view class='my_common_item_divider'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='bottom_my_rank'>
+
+        <view class='attention_item_content'>
+          <view class='bottom_my_container'>
+            <view class='my_info_pic_container'>
+              <image class=' my_info_pic' src='../../image/header_icon3.png'></image>
+              <image class=' bottom_my_vip_pic' src='../../image/member_vip.png'></image>
+            </view>
+            <text class='bottom_my_name'>东方不败</text>
+          </view>
+
+      
+            <view class='bottom_my_text'>当前排名：200</view>
+         
+        </view>
+       
+      </view>
+
+   
+
+
+
+
+</view>

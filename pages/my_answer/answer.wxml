@@ -1,0 +1,55 @@
+<!--pages/my_answer/answer.wxml-->
+<view>
+  <view class='top_divideline'></view>
+
+  <view class='answer_me_container'>
+    <view class='question_item' wx:key="{{key}}" wx:for="{{dataList}}" hidden="{{currentTab==1?'':'hidden'}}" bindtap='questionDetail'>
+
+      <view class='question_person_and_star'>
+        <view class='question_person' catchtap='personInfo' data-userId='{{item.user_id}}'>
+          <image class='question_person_header' src='{{item.img_url}}'></image>
+          <text class='question_person_nickname'>{{item.name}}</text>
+        </view>
+        <view class='question_star'>
+          <text class='question_star_num'>{{item.red_heart}}🌟</text>
+        </view>
+      </view>
+
+      <view class='question_remark'>
+       {{item.content.txt}}
+      </view>
+
+      <view class='comment_and_thumb_container'>
+
+        <view class='thumb_container'>
+          <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+          <text class='comment_and_thumb_text'>{{item.like_num}}</text>
+        </view>
+
+        <view class='comment_container'>
+          <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+          <text class='comment_and_thumb_text'>{{item.comment_num}}</text>
+        </view>
+      </view>
+
+      <view class='answer_voice'>
+        <view class='answer_voice_container'>
+          <image class='answer_voice_pic' src='../../image/voice.jpg'></image>
+        </view>
+        <text class='answer_voice_time'>1s</text>
+      </view>
+
+      <view class='question_item_innder_divideline'>
+      </view>
+
+      <view class='tell_somebody'>
+        @{{item.r_name}}
+      </view>
+
+    </view>
+
+  </view>
+
+  <empty wx:if="{{empty}}"/>
+ <view class='noMoreData'  wx-if="{{noMoreData}}">没有数据更多数据了</view>
+</view>

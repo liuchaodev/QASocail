@@ -1,0 +1,160 @@
+/* pages/my_attention/attention.wxss */
+page{
+  margin-bottom: 100rpx;
+}
+.root {
+  width: 100%;
+  padding-bottom: 50rpx;
+}
+
+.top_divideline {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 1rpx;
+  background: #f2f2f2;
+}
+
+.my_info_container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+  padding-top: 50rpx;
+  padding-bottom: 20rpx;
+  background: white;
+}
+
+.my_info_pic_container {
+  position: relative;
+}
+
+.my_info_pic {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.my_info_vip_pic {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: 0rpx;
+  bottom: 20rpx;
+}
+
+.my_info_name {
+  margin-left: 20rpx;
+  height: 100rpx;
+  margin-top: 25rpx;
+  font-size: 34rpx;
+  color: #030303;
+  text-align: center;
+ 
+}
+
+.attention_item_content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.attention_item_button_text {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-left: 30rpx;
+  margin-top: 30%;
+  border-radius: 16rpx;
+  margin-right: 30rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #030303;
+}
+
+.my_common_item_container_with_divideline {
+  display: flex;
+  flex-direction: column;
+}
+
+.my_common_item_divider_background {
+  background: white;
+}
+
+.my_common_item_divider {
+  background: #e8e8e8;
+  margin-left: 30rpx;
+  height: 3rpx;
+}
+
+.detail_left {
+  margin-left: 30rpx;
+  margin-top: 75rpx;
+  text-align: left;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.detail_top_three {
+  color: #7a1eff;
+}
+
+.detail_other_rank {
+  color: #333;
+}
+
+.detail_right {
+  margin-left: 20rpx;
+  width: 100%;
+}
+
+.detail_item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.bottom_my_rank {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+   box-shadow: 1px 1px 1px 2px #ddd;
+}
+
+.bottom_my_container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 0rpx;
+  background: white;
+}
+
+.bottom_my_text {
+  margin-top: 45rpx;
+  margin-right: 30rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fd7a3e;
+}
+
+
+.bottom_my_vip_pic {
+  width: 25rpx;
+  height: 25rpx;
+  position: absolute;
+  right: 0rpx;
+  bottom: 40rpx;
+}
+.bottom_my_name {
+  margin-left: 20rpx;
+  height: 100rpx;
+  margin-top: 25rpx;
+  font-size: 34rpx;
+  color: #030303;
+  text-align: center;
+  font-weight: bold;
+ 
+}
+

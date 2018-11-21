@@ -1,0 +1,36 @@
+<!--pages/home/question.wxml-->
+<view>
+  <view class='top_divideline'></view>
+  <view class='title_container'>
+  <view class='title_name'>举手</view>
+   <image class='question_commit_input_pic' src='../../image/about.png'></image>
+
+  </view>
+
+  <!--问题列表-->
+  <view class='question_commit'>
+
+    <view class="question_commit_input_container">
+     
+      <textarea class='question_commit_input' bindinput='inputContent' placeholder="请输入您所售卖的物品的详情" />
+
+    </view>
+
+
+<view class='input_num_container'>
+  <text>🌟</text>
+  <input class='input_start_num'  bindinput='inputNum' placeholder-class="place-holder" placeholder='输入你星星的数量'></input>
+
+</view>
+
+    <view class='question_commit_innder_divideline'>
+    </view>
+
+    <view class='ask_somebody' bindtap='atSomebody'>
+      {{atPerson.name==''?'在这里@您提问的人':'@'+atPerson.name}}
+    </view>
+
+  </view>
+
+  <view class='commit_question' bindtap='submitQuestion'>提问</view>
+</view>

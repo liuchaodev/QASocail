@@ -1,0 +1,43 @@
+/* pages/comment_input/comment.wxss */
+page{
+  background-color: #efefef
+}
+
+.top_divideline {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 1rpx;
+  background: #F2F2F2;
+}
+.message_content_container {
+  background: #efefef;
+  padding: 30rpx;
+}
+
+.message_content {
+  padding: 30rpx;
+  height: 344rpx;
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 1.5;
+  background: #fff;
+  border: 1rpx solid #efefef;
+  border-radius: 30rpx;
+  box-sizing: border-box
+}
+
+
+.commit_question{
+  background: #F5D600;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top:50rpx;
+
+}

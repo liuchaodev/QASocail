@@ -1,0 +1,104 @@
+<!--pages/home_question_detail/detail.wxml-->
+<!--问题列表-->
+<view class='root'>
+  <!--分割线-->
+  <view class='top_divideline'></view>
+
+  <view class='ask_me_container'>
+    <view class='question_item'>
+
+      <view class='question_person_and_star'>
+        <view class='question_person' catchtap='personInfo'>
+          <image class='question_person_header' src='{{headurl}}'></image>
+          <text class='question_person_nickname'>{{nickname}}</text>
+        </view>
+        <view class='question_star'>
+          <text class='question_star_num'>10🌟</text>
+        </view>
+      </view>
+
+      <view class='question_remark'>
+        聪聪，你见多识广，怎么才能火眼金睛的从白莲花的外表看出绿茶婊的内心，有什么技巧么，我想学习一下，啊哈哈
+      </view>
+
+      <view class='comment_and_thumb_container'>
+
+        <view class='thumb_container'>
+          <image class='comment_and_thumb_icon' src='../../image/thumb_unselected.png'></image>
+          <text class='comment_and_thumb_text'>20</text>
+        </view>
+
+        <view class='comment_container'>
+          <image class='comment_and_thumb_icon' src='../../image/comment.png'></image>
+          <text class='comment_and_thumb_text'>100</text>
+        </view>
+      </view>
+
+
+      <view class='question_item_innder_divideline'>
+      </view>
+
+      <view class='tell_somebody'>
+        @王思聪
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class='bottom_button_container'>
+    <view class='bottom_button'>
+      <image class='bottom_pic' src='../../image/collect_unselected.png'></image>
+      <text class='bottom_button_text'>收藏</text>
+
+    </view>
+    <view class='bottom_button_divideline'></view>
+    <view class='bottom_button'>
+      <image class='bottom_pic' src='../../image/comment.png'></image>
+      <text class='bottom_button_text'>评论</text>
+
+    </view>
+    <view class='bottom_button_divideline'></view>
+    <view class='bottom_button'>
+      <image class='bottom_pic' src='../../image/thumb_unselected.png'></image>
+      <text class='bottom_button_text'>200</text>
+
+    </view>
+    <view class='bottom_button_divideline'></view>
+    <view class='bottom_button'>
+      <image class='bottom_pic' src='../../image/collect_unselected.png'></image>
+      <text class='bottom_button_text'>100</text>
+    </view>
+
+  </view>
+
+  <view class='answer_voice'>
+    <view class='answer_voice_container'>
+      <image class='answer_voice_pic' src='../../image/voice.jpg'></image>
+      <view class='answer_voice_time'>1s</view>
+    </view>
+
+  </view>
+
+
+  <view class='comment_num'>评论50</view>
+
+  <view class='comment_item_all' wx:for="{{comments}}">
+    <view class='comment_item_content'>
+
+      <view class='comment_header_pic_container'>
+        <image class='comment_header_pic' src='{{item.headurl}}'></image>
+      </view>
+
+      <view class='comment_text'>
+        <view class='comment_nickname'>{{item.nickname}}</view>
+        <view class='comment_content'>{{item.comment}}</view>
+      </view>
+    </view>
+    <view class='my_common_item_divider_background'>
+      <view class='my_common_item_divider'></view>
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tabbar": "/component/tabbar/tabbar",
+    "home": "/component/home/index",
+    "my": "/component/my/my"
+  }
+}

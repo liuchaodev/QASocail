@@ -1,0 +1,59 @@
+/* pages/my_trade/trade.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #efefef;
+}
+.root {
+  padding-bottom: 50rpx;
+}
+.top_divideline {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 1rpx;
+  background: #F2F2F2;
+}
+.trade_item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  padding-bottom: 30rpx;
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.trade_item_right{
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 36rpx;
+color: #333333;
+font-weight: bold;
+}
+.trade_name{
+  
+font-size: 30rpx;
+color: #333333;
+}
+.trade_date{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+color: #999999;
+}
+.my_common_item_divider_background{
+  background: white;
+}
+.my_common_item_divider{
+  background:#e8e8e8;
+  margin-left: 30rpx;
+  height: 3rpx;
+}
+.noMoreData{
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #878787
+}

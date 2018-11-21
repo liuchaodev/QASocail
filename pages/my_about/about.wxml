@@ -1,0 +1,5 @@
+<!--pages/my_about/about.wxml-->
+<view class='root'>
+ <view class='top_divideline'></view>
+<view class='about_text'>么么哒公司成立于2016年，是通过互联网用户与粉丝真实互动平台，目前入住的明星有周杰伦，王思聪，马云，林更新等众多娱乐圈大佬，欢迎大家前来与明星0距离的互动接触。</view>
+</view>

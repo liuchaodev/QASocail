@@ -1,0 +1,10 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "最热回答榜",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#efefef",
+  "usingComponents": {
+    "empty": "../../component/empty/empty"
+  }
+}

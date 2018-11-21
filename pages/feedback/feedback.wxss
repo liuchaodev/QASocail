@@ -1,0 +1,163 @@
+/* pages/home/question.wxss */
+
+page{
+  background-color: #efefef;
+    width: 100%;
+  height: 100%;
+}
+.root{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.top_divideline {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 1rpx;
+  background: #F2F2F2;
+}
+
+.title_name{
+  font-size: 40rpx;
+color: #333333;
+font-weight: bold;
+text-align: left;
+margin-top: 50rpx;
+margin-left: 30rpx;
+}
+.input_start_num{
+  margin-left: 10rpx;
+  justify-content: space-between;
+  width: 200rpx;
+  font-size: 24rpx;
+  line-height: 1.5;
+}
+.question_commit {
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background: white;
+  border-radius: 16rpx;
+  margin-top: 50rpx;
+  position: relative;
+   box-shadow: 0px 1px 1px 1px #ddd;
+}
+.question_commit_input_container{
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  position: relative;
+}
+.question_commit_input{
+  width: 100%;
+  height: 350rpx;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+  text-align:justify;
+}
+.ask_somebody{
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #F5D600;
+
+}
+.question_commit_innder_divideline{
+  height: 1rpx;
+  width: 100%;
+  background: #F2F2F2;
+  margin-top: 10rpx;
+}
+.commit_question{
+  background: #F5D600;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top:90rpx;
+
+}
+.question_commit_input_pic{
+  position: absolute;
+  margin-right: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+  right: 0rpx;
+}
+.input_num_container{
+  width: 100%;
+  margin-top: 20rpx;
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+/* pages/login/login.wxss */
+.appLogo{
+  width: 150rpx;
+  height: 130rpx;
+}
+.appLogoBackground{
+  flex-direction:cloumn;
+  text-align: center;
+  padding-bottom: 120rpx;
+  padding-top: 150rpx;
+}
+.appLogoTitle{
+  font-size: 34rpx;
+  margin-top: 30rpx;
+}
+
+.inputBackground{
+   margin-top:30rpx; 
+  display: flex;
+  background: #fff;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  flex-direction:row;
+  padding-left: 10rpx;
+   border-top-right-radius: 16rpx; /*目标元素右上角为4px的圆角*/
+  border-top-left-radius: 16rpx; /*目标元素左上角为4px的圆角*/
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+  border: 1rpx solid #fff;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+.inputTitle{
+  width: 420rpx;
+  height: 70rpx;
+  font-size: 28rpx;
+
+  background: #fff;
+  text-align: left;
+  line-height: 70rpx;
+  padding-left: 10rpx;
+
+  opacity: 0.9;
+
+
+color: #333333;
+letter-spacing: 0.12px;
+
+}
+
+.inputStyle{
+  margin-left: 10rpx;
+  padding-right: 40rpx;
+  margin-right: 30rpx;
+  width: 100%;
+  height: 70rpx;
+  background: #fff;
+  text-align: left;
+  line-height: 70rpx;
+}
